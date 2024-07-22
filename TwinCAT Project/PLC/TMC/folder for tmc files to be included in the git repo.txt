@@ -1,0 +1,1 @@
+any tmc file that is inside a \TMC folder will by sent to git the repository and NOT ignored by the .gitignore
