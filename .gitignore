@@ -31,6 +31,7 @@
 *.library
 
 *.compileinfo
+*.asm
 *.core
 LineIDs.dbg
 LineIDs.dbg.bak
@@ -46,22 +47,34 @@ LineIDs.dbg.bak
 
 # TwinCAT3 project files
 *.tsproj.bak
+*.tsproj.b?k
 *.tsproj.orig
 *.xti.bak
+*.xti.bk?
 *.xti.orig
-*.project.~u
+*.xtv
+*.xtv.bak
+*.xtv.bk?
 
-# folders that should be excluded
-_Boot/
-_CompileInfo/
-_Libraries/
-_ModuleInstall/
-_Deployment/
-_Repository/
+# Multiuser specific
+**/.TcGit/
+
+# exclude not required folders
+**/_Boot/
+**/_CompileInfo/
+**/_Libraries/
+**/_ModuleInstall/
+**/_Deployment/
+**/_Repository/
+
+# VS Shell project specific files and folders
+**/.vs/
+*.~u
+*.project.~u
+*.suo
 
 ### TwinCAT3.OpenFrameworks Stack ###
 OpenFrameworks.gitignore
-
 
 ### TwinCAT3.VisualStudio Stack ###
 VisualStudio.gitignore
